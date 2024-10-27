@@ -1,0 +1,60 @@
+/* Container layout */
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #f4f5f7;
+  border-radius: 8px;
+  background-color: #f1ecf1;
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f3f0f0;
+  border-radius: 4px;
+  background-color: #f6f3f7;
+}
+
+button {
+  padding: 5px;
+  background-color: #010911;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c47ee0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
